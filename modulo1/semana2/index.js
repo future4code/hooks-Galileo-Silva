@@ -116,12 +116,12 @@ function adicionarCarrinho(objeto, objeto1, objeto2){
 console.log(adicionarCarrinho(fruta, fruta1, fruta2))
 
 //Desafio 3).
-function controleDeEstoque(disponivel){
-    saida = disponivel.fruta1
-    
-    return saida
+
+const estoqueCarrinhoDeFruta = (objeto3) =>{
+    return carrinho[objeto3.disponibilidade = !fruta2.disponibilidade]
 }
-console.log(controleDeEstoque(fruta1))
+
+estoqueCarrinhoDeFruta(fruta2)
 
 
 
