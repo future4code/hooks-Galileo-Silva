@@ -76,7 +76,7 @@ const pessoa = {
 }
 
 const pessoa1 = {
-    nome: "Galileu",
+    nome: "Galileo",
     idade: 20,
     profissao: "Engenheiro de Software"
 }
