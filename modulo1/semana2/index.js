@@ -109,19 +109,25 @@ const fruta2 = {
     disponibilidade: true
 }
 
-function adicionarCarrinho(objeto, objeto1, objeto2){
-    carrinho.push(objeto, objeto1, objeto2)
+arryObject = [fruta , fruta1, fruta2]
+
+const adicionarCarrinho = (objeto) =>{
+    carrinho.push(objeto)
     return carrinho 
 }
-console.log(adicionarCarrinho(fruta, fruta1, fruta2))
+console.log(adicionarCarrinho(arryObject))
 
 //Desafio 3).
 
 const estoqueCarrinhoDeFruta = (objeto3) =>{
-    return carrinho[objeto3.disponibilidade = !fruta2.disponibilidade]
+
+    objeto3.disponibilidade = !fruta2.disponibilidade
+
+    //return carrinho[objeto3.disponibilidade = !fruta2.disponibilidade]
+    return objeto3
 }
 
-estoqueCarrinhoDeFruta(fruta2)
+console.log(estoqueCarrinhoDeFruta(fruta2))
 
 
 
