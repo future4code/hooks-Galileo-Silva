@@ -78,7 +78,7 @@
 
 //Exercícios de escrita de código
 
-// 1. Faça um programa que pergunta ao usuário qual a idade dele e imprima no console se ele/ela pode dirigir (apenas maiores de idade).
+// 1). Faça um programa que pergunta ao usuário qual a idade dele e imprima no console se ele/ela pode dirigir (apenas maiores de idade).
     
 //     a) Faça um `prompt` para receber a idade do usuário e guarde em uma variável.
     
@@ -95,7 +95,85 @@
 //     console.log("Você não pode dirigir")
 // }
 
+//2). Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar M (matutino) ou V (Vespertino) ou N (Noturno). Imprima no console a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else
+
+// const turno = prompt("Em que turno você estuda? Digite M (matutino), V (Vespertino) ou N (Noturno)")
+// const turnoM = turno.toUpperCase()
+
+// if(turnoM === "M") {
+//   console.log("Bom dia!")
+// } else if(turnoM === "V") {
+//   console.log("Boa tarde!")
+// } else if(turnoM === "N") {
+//   console.log("Boa noite!")
+// }
+
+//3). Repita o exercício anterior, mas utilizando a estrutura de switch case agora.
+
+// function turnoDaAula(periodo) {
+//     switch (periodo) {
+//         case "M":
+//           console.log("Bom dia!");
+//           break;
+//         case "V":
+//           console.log("Boa Tarde!");
+//           break;
+//         case "N":
+//           console.log("Boa Noite!");
+//           break;
+//         default:
+//           console.log("Não existe esse turno!");
+//           break;
+//     }
+// }
+//     const turno = prompt("Em que turno você estuda? Digite M (matutino), V (Vespertino) ou N (Noturno)")
+//     const turnoM = turno.toUpperCase()
+//     turnoDaAula(turnoM);
+
+//4). Considere a situação: você vai ao cinema com um amigo ou amiga, porém ele/ela só assistirá a um filme com você se ele for do gênero fantasia e se o ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme. Caso positivo, imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha outro filme :("
 
 
+// const genero = prompt("Qual o genero do filme?")
+// const valor = prompt("Qual o valor do ingresso?")
+// const generoM = genero.toUpperCase()
 
+// if(generoM === "FANTASIA" && valor <= 15) {
+//   console.log("Bom filme!")
+// } else {
+//     console.log("Escolha outro Filme!")
+// }
+
+//Desafios
+
+//1). Modifique o código do exercício 4 de escrita de código para, antes de imprimir a mensagem "Bom filme!", pergunte ao usuário, pelo prompt qual lanchinho ele vai comprar (pipoca, chocolate, doces, etc) e imprima no console as mensagens "Bom filme!" e "Aproveite o seu [LANCHINHO]", trocando [LANCHINHO] pelo que o usuário colocou no input.
+
+// const genero = prompt("Qual o genero do filme?")
+// const valor = prompt("Qual o valor do ingresso?")
+// const generoM = genero.toUpperCase()
+
+// if(generoM === "FANTASIA" && valor <= 15) {
+//     const snack = prompt("Qual Lanchinho você quer comprar?")
+//     console.log(`Aproveite o seu(a) ${snack}`)
+//     console.log("Bom filme!")
+// } else {
+//     console.log("Escolha outro Filme!")
+// }
+
+//2). 2. Você foi contratado para criar um sistema de vendas de ingressos de jogos de um estádio de futebol. Para esta compra, o usuário deve fornecer algumas informações:
+    // - Nome completo;
+    // - Tipo de jogo: IN indica internacional; e DO indica doméstico;
+    // - Etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final
+    // - Categoria: pode ser as opções 1, 2, 3 ou 4;
+    // - Quantidade de ingressos
+    
+    // O seu sistema deve solicitar estas informações ao usuário, através do `prompt` . Além disso, ele deve imprimir tudo isso, junto com o valor de cada ingresso e o valor total que o usuário tem que pagar (ou seja, o valor unitário do ingresso multiplicado pela quantidade). Abaixo, há a tabela com os valores de cada ingresso e exemplos de execução do programa. Lembrando que o valor de jogos internacionais é o mesmo de jogos domésticos, mas seus preços devem ser multiplicados pelo valor do dólar (considerar o dólar = R$4,10)
+
+    const nome = prompt("Informe seu nome")
+    const tipoDeJogo = prompt("Informe o tipo de jogo(IN - internacional ou DO - doméstico)")
+    const tipoDeJogoM = tipoDeJogo.toUpperCase()
+    const etapaDoJogo = prompt("Informe a etapa do jogo(SF, DT, ou FI")
+    const etapaDoJogoM = etapaDoJogo.toUpperCase()
+    const categoria = prompt("Informe a categoria(1, 2, 3, ou 4)")
+    const quantidadeDeIngressos = prompt("Informe a quantidade de ingressos")
+    const valorIngressoDo = 
 
