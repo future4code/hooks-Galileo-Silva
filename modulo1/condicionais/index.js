@@ -149,9 +149,8 @@
 
 // const genero = prompt("Qual o genero do filme?")
 // const valor = prompt("Qual o valor do ingresso?")
-// const generoM = genero.toUpperCase()
 
-// if(generoM === "FANTASIA" && valor <= 15) {
+// if(genero.toLocaleUpperCase() === "FANTASIA" && valor <= 15) {
 //     const snack = prompt("Qual Lanchinho você quer comprar?")
 //     console.log(`Aproveite o seu(a) ${snack}`)
 //     console.log("Bom filme!")
@@ -168,12 +167,12 @@
     
     // O seu sistema deve solicitar estas informações ao usuário, através do `prompt` . Além disso, ele deve imprimir tudo isso, junto com o valor de cada ingresso e o valor total que o usuário tem que pagar (ou seja, o valor unitário do ingresso multiplicado pela quantidade). Abaixo, há a tabela com os valores de cada ingresso e exemplos de execução do programa. Lembrando que o valor de jogos internacionais é o mesmo de jogos domésticos, mas seus preços devem ser multiplicados pelo valor do dólar (considerar o dólar = R$4,10)
 
-    const nome = prompt("Informe seu nome")
-    const tipoDeJogo = prompt("Informe o tipo de jogo(IN - internacional ou DO - doméstico)")
-    const tipoDeJogoM = tipoDeJogo.toUpperCase()
-    const etapaDoJogo = prompt("Informe a etapa do jogo(SF, DT, ou FI")
-    const etapaDoJogoM = etapaDoJogo.toUpperCase()
-    const categoria = prompt("Informe a categoria(1, 2, 3, ou 4)")
-    const quantidadeDeIngressos = prompt("Informe a quantidade de ingressos")
-    const valorIngressoDo = 
+    // const nome = prompt("Informe seu nome")
+    // const tipoDeJogo = prompt("Informe o tipo de jogo(IN - internacional ou DO - doméstico)")
+    // const tipoDeJogoM = tipoDeJogo.toUpperCase()
+    // const etapaDoJogo = prompt("Informe a etapa do jogo(SF, DT, ou FI")
+    // const etapaDoJogoM = etapaDoJogo.toUpperCase()
+    // const categoria = prompt("Informe a categoria(1, 2, 3, ou 4)")
+    // const quantidadeDeIngressos = prompt("Informe a quantidade de ingressos")
+    // const valorIngressoDo = 
 
