@@ -59,31 +59,50 @@ console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-
+  const cor1 = prompt("cor1")
+  const cor2 = prompt("cor2")
+  const cor3 = prompt("cor3")
+  
+  console.log[cor1, cor2, cor3]
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-
+  const entrada = "oi"
+  const entradaMaiuscula = entrada.toLocaleLowerCase
+  
+  console.log(entradaMaiuscula)
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
+  custo = 3000
+  valorIngresso = 100
+  
+  console.log(custo/valorIngresso)
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-
+  string1 = "ola"
+  string2 = "abc"
+  const tamString1 = string1.length
+  const tamString2 = string2.length
+  
+  console.log(tamString1 === tamString2)
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-
+  array = [1, 2, 3]
+  const numerDeIndice = array.length
+  let saida = numerDeIndice.splice(1, numerDeIndice-1)
+  
+  console.log(saida)
 }
 
 // EXERCÍCIO 10
