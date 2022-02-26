@@ -1,20 +1,21 @@
-// Exercício1
+// Exercício de interpretação de código
 
-/*const bool1 = true
-const bool2 = false
-const bool3 = !bool2
+//1).Leia o código abaixo. Indique todas as mensagens impressas no console, SEM EXECUTAR o programa.
 
-let resultado = bool1 && bool2
-console.log("a. ", resultado)
+// const bool1 = true
+// const bool2 = false
+// const bool3 = !bool2
 
-resultado = bool1 && bool2 && bool3 
-console.log("b. ", resultado) 
+// let resultado = bool1 && bool2
+// console.log("a. ", resultado)
 
-resultado = !resultado && (bool1 || bool2) 
-console.log("c. ", resultado)
+// resultado = bool1 && bool2 && bool3
+// console.log("b. ", resultado)
 
-console.log("d. ", typeof resultado)
-*/
+// resultado = !resultado && (bool1 || bool2)
+// console.log("c. ", resultado)
+
+// console.log("d. ", typeof resultado)
 /*
 Resposta:
 a. false
@@ -23,46 +24,81 @@ c. true
 d. boolean
 */
 
-// Exercício2
-/*
-let primeiroNumero = prompt("Digite um número!")
-let segundoNumero = prompt("Digite outro número!")
+//2).Seu colega se aproxima de você falando que o código dele não funciona como devia.  Vamos ajudá-lo: consegue perceber algum problema? O que será impresso no console?
 
-let soma = parseInt(primeiroNumero) + parseInt(segundoNumero)
+// let primeiroNumero = prompt("Digite um numero!")
+// let segundoNumero = prompt("Digite outro numero!")
 
-console.log(soma)
-*/
+// const soma = primeiroNumero + segundoNumero
 
-// Exercício de escrita de código
-//1)
-/*
-let idade = prompt("Digite sua idade:")
-let idadeAmigo = prompt("Digite a idade do seu melhor amigo(a):")
-let comparIdade = idade > idadeAmigo
+// console.log(soma)
 
-console.log(`Sua idade é maior do que a do seu amigo: ${comparIdade} `)
+//Erro = A lógica está concatenando
 
-console.log(`Adiferença de idade entre você e seu amigo é de ${idade - idadeAmigo} anos!`)
-*/
+//3).Para o exercício anterior, sugira ao seu colega uma solução para que o valor impresso no console seja, de fato, a soma dos dois números.
 
-//2)
-/*
-let numPar = prompt("Insira um número par:")
- console.log(numPar%2)
-*/
+// let primeiroNumero = prompt("Digite um número!")
+// let segundoNumero = prompt("Digite outro número!")
 
-//3)
-/*
-let idade = prompt("Insira sua idade:")
+// let soma = parseInt(primeiroNumero) + parseInt(segundoNumero)
 
-console.log(`Sua idade em meses é :${idade*12} meses`)
+// console.log(soma)
 
-console.log(`Sua idade em dias é: ${idade*365} dias`)
+// Exercícios de escrita de código
+//1). Faça um programa que:
 
-console.log(`Sua idade em horas é: ${365*idade*24} horas`)
-*/
+// a) Pergunte a idade do usuário
 
-//4)
+// b) Pergunte a idade do seu melhor amigo ou da sua melhor amiga
+
+// c) ** Imprima na console ** a seguinte mensagem: "Sua idade é maior do que a do seu melhor amigo?", seguido pela resposta(`true`
+// ou `false`)
+
+// d) ** Imprima na console ** a diferença de idade(não tem problema se sair um número negativo)
+
+// let idade = prompt("Digite sua idade:")
+// let idadeAmigo = prompt("Digite a idade do seu melhor amigo(a):")
+// let comparIdade = idade > idadeAmigo
+
+// console.log(`Sua idade é maior do que a do seu amigo: ${comparIdade} `)
+
+// console.log(`Adiferença de idade entre você e seu amigo é de ${idade - idadeAmigo} anos!`)
+
+//20. Faça um programa que:
+
+// a) Peça ao usuário que insira um número ** par **
+
+// b) Imprima na console ** o resto da divisão ** desse número por 2.
+
+// c) Teste o programa com diversos números pares.Você notou um padrão ? Escreva em um comentário de código.
+// A saída sempre é 0
+// d) O que acontece se o usuário inserir um número ímpar ? Escreva em um comentário de código
+//A saída sem pre é 1
+// let numPar = prompt("Insira um número par:")
+// console.log(numPar % 2)
+
+//3). Faça um programa que pergunte ao usuário sua idade em anos. Depois, imprima no console 
+
+// a) A idade do usuário em meses
+
+// b) A idade do usuário em dias
+
+// c) A idade do usuário em horas
+
+// let idade = prompt("Insira sua idade:")
+// console.log(`Sua idade em meses é :${idade*12} meses`)
+// console.log(`Sua idade em dias é: ${idade*365} dias`)
+// console.log(`Sua idade em horas é: ${365*idade*24} horas`)
+
+//4. Faça um programa que pergunte ao usuário dois números. Em seguida, faça as operações e imprima no console as seguintes mensagens seguidas pelo `true` ou `false`:
+
+// a).O primeiro numero é maior que segundo ? true
+// b).O primeiro numero é igual ao segundo ? false
+// c).O primeiro numero é divisível pelo segundo ? true
+// d).O segundo numero é divisível pelo primeiro ? true
+
+// obs: O true ou false vai depender dos números inseridos e do resultado das operações.
+
 /*
 let num1 = prompt("Insira o primeiro número:")
 let num2 = prompt("Insira o segundo número:")
@@ -184,8 +220,3 @@ console.log( xic, "Xícaras equivalem a ", lit,"litros")
 /*
 Escolha ao menos um dos itens anteriores e modifique o programa para que ele peça ao usuário o valor da unidade original antes de converter
 */
-
-
-
-
-
