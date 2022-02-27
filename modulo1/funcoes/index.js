@@ -1,63 +1,67 @@
 // Exercício de interpretação de código
 
 //1)
-/*
-function minhaFuncao(variavel) {
-	return variavel * 5
-}
 
-//console.log(minhaFuncao(2))
-//console.log(minhaFuncao(10))
+// function minhaFuncao(variavel) {
+//     return variavel * 5
+// }
+
+// console.log(minhaFuncao(2))
+// console.log(minhaFuncao(10))
 
 //a)resp 10 - 50
-//b)nada aconteceria
-*/
+//b)nada é impresso
+
+
 
 //2)
-/*
-let textoDoUsuario = prompt("Insira um texto");
 
-const outraFuncao = function(texto) {
-	return texto.toLowerCase().includes("cenoura")
-}
+// let textoDoUsuario = prompt("Insira um texto");
 
-const resposta = outraFuncao(textoDoUsuario)
-console.log(resposta)
-*/
+// const outraFuncao = function(texto) {
+//     return texto.toLowerCase().includes("cenoura")
+// }
+
+// const resposta = outraFuncao(textoDoUsuario)
+// console.log(resposta)
+
 //a)Essa função tem a finalinelidade de verificar se na entrada contém a string "cenoura"
 
-//b)i. true
-//  ii.true
-//  iii.true
+//b) Determine qual será a saída no console para cada uma das 3 entradas do usuário:
+//i. Eu gosto de cenoura.  true
+//ii. CENOURA é bom pra vista. true
+//iii. Cenouras crescem na terra. true
 
 //Exercícios de escrita de código
 
-//a)
-/*
-function imprimirFrase(){
-console.log("Eu sou Galileo, tenho 38 anos, moro em Recife e sou estudante")
-}
-imprimirFrase()
-*/
+//a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas informações sobre você, como:
+
+// function imprimirFrase() {
+//     console.log("Eu sou Galileo, tenho 38 anos, moro em Recife e sou estudante")
+// }
+// imprimirFrase()
+
 //b)
-/*
-function informacoesPessoais(){
-    let nome = prompt("Insira seu nome")
-    let idade = prompt("Insira sua idade")
-    let cidade = prompt("Insira sua cidade")
-    let profissao = prompt("Insira sua profissão")
 
-    const nomeConv = nome.toString()
-    const idadeConv = idade
-    const cidadeConv = cidade.toString()
-    const profissaoConv = profissao.toString()
-               
-    console.log(`Eu sou ${nomeConv}, tenho ${idadeConv} anos, moro em ${cidadeConv} e sou ${profissaoConv} `)
+function informacoesPessoais(nome, idade, cidade, profissao) {
+    console.log(`Eu sou ${ nome }, tenho ${ idade }, anos moro em ${cidade}, e sou ${profissao}`)
+}
 
-    }
-    
-    informacoesPessoais()
-*/
+informacoesPessoais("galileo", 38, "Recife", "Estudante")
+
+
+
+
+
+
+
+// function imprimirDadosPessoais(nome, idade, profissao) {
+//     console.log(`
+//Ola $ { nome }, sua idade $ { idade }, e sua profissao $ { profissao }
+`)
+// }
+// imprimirDadosPessoais(28, "instrutora", "tayanne")
+
 
 //2).
 //a).
@@ -149,19 +153,17 @@ multiplicar(30,3)
 dividir(30,3)
 
 */
-//Desafios
-//1).a
-/*
-const arrowFunction = (novaFunction) => {
-    return novaFunction
+Desafios
+1).a
+
+// const arrowFunction = (novaFunction) => {
+//     return novaFunction
     
-}
+// }
 
-console.log(arrowFunction)
+// console.log(arrowFunction)
 
-//b.
+// //b.
 
-const novaFunction = (2, 3) => {
-    return 2 + 3
-}
-*/
+// const novaFunction = (2, 3) => {
+//     return 2 + 3
