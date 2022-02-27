@@ -79,19 +79,19 @@ console.log(`O e-mail ${email} foi cadastrado com sucesso. Seja bem vindo(a), ${
 //console.log(comida)
 
 
-/*3
-a) Crie um array vazio e guarde-o em uma variável, chamada `listaDeTarefas`
+//3);
+// a) Crie um array vazio e guarde - o em uma variável, chamada `listaDeTarefas`
 
-b) Pergunte ao usuário 3 tarefas que ele precise realizar no dia e armazene-as, uma por uma, no array
+// b) Pergunte ao usuário 3 tarefas que ele precise realizar no dia e armazene - as, uma por uma, no array
 
-c) Imprima o array no console
+// c) Imprima o array no console
 
-d) Peça ao usuário que digite o **índice** de uma tarefa que ele já realizou: 0, 1 ou 2 
+// d) Peça ao usuário que digite o ** índice ** de uma tarefa que ele já realizou: 0, 1 ou 2
 
-e) Remova da lista o item de índice que o usuário escolheu.
+// e) Remova da lista o item de índice que o usuário escolheu.
 
-f) Imprima o array no console
-*/
+// f) Imprima o array no console
+
 
 //a)
 /*
