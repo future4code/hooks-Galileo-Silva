@@ -113,8 +113,8 @@ console.log(`O segundo número é divisível pelo primeiro? ${num2%num1===0}`)
 */
 
 //Desafios
-
-//a)
+//1).
+//a)Calcule e mostre o valor de 77°F em  K, mostrando a unidade no console também.
 /*
 let far = 77
 let kel = (far-32)*(5/9)+273.15
@@ -122,7 +122,7 @@ let kel = (far-32)*(5/9)+273.15
 console.log(kel)
 */
 
-//b)
+//b)Calcule e mostre o valor de 80°C em °F, mostrando a unidade no console também
 /*
 let cel = 80
 let far = (cel)*(9/5)+32
@@ -130,7 +130,7 @@ let far = (cel)*(9/5)+32
 console.log(far)
 */
 
-//c)
+//c)Calcule e mostre o valor de 30°C em °F e K, mostrando as unidades no console também
 /*
 let cel = 30
 let far = (cel)*(9/5)+32
@@ -139,7 +139,7 @@ let kel = (far-32)*(5/9)+273.15
 console.log("Resultado em Far", far)
 */
 
-//d)
+//d)Altere o último item para que o usuário insira o valor em graus Celsius que ele deseja converter
 /*
 let cel = prompt("Insira a temperatura em Celsius:")
 let far = (cel)*(9/5)+32
@@ -152,17 +152,17 @@ console.log("Resultado em Far", far)
 /*
 let quiloHora = 0.05
 
-//a)
+//a)Calcule e mostre o valor a ser pago por uma residência que consuma 280 quilowatt-hora
 
 console.log(quiloHora*280, "Reais")
 
-//b)
+//b)Altere o programa para receber mais um valor: a porcentagem de desconto. Calcule e mostre o valor a ser pago pela mesma residência acima considerando 15% de desconto
 
 console.log((15/100)*(quiloHora*280))
 */
 
 //3.
-//a)
+//a)Procure uma forma de converter libra (lb) para quilograma (kg) e escreva um programa que converta 20lb para kg. Imprima  a resposta no console da seguinte forma:
 /*
 let lb = prompt("Insira a quantidade de Libras:")
 let kg = lb/(2.2046)
@@ -170,7 +170,7 @@ let kg = lb/(2.2046)
 console.log( lb, "lb equivalem a ", kg,"kg")
 */
 
-//b)
+//b) Procure uma forma de converter onça (oz) para quilograma (kg) e escreva um programa que converta 10.5oz para kg. Imprima  a resposta no console da seguinte forma: 
 /*
 let oz = prompt("Insira a quantidade de Onça(oz):")
 let kg = oz/(35.274)
@@ -178,7 +178,7 @@ let kg = oz/(35.274)
 console.log( oz, "oz equivalem a ", kg,"kg")
 */
 
-//c)
+//c) Procure uma forma de converter milha (mi) para metro (m) e escreva um programa que converta 100mi para m. Imprima  a resposta no console da seguinte forma:
 /*
 let mi = prompt("Insira a quantidade de Milhas:")
 let me = mi/(0.00062137)
@@ -188,7 +188,7 @@ console.log( mi, "Milhas equivalem a ", me,"metros")
 //resp: 100 Milhas equivalem a  160934.70878864444 metros
 */
 
-//d)
+//d) Procure uma forma de converter pés (ft) para metro (m) e escreva um programa que converta 50ft para m. Imprima  a resposta no console da seguinte forma:
 /*
 let ft = prompt("Insira a quantidade de Pés:")
 let me = ft/(3.2808)
@@ -198,7 +198,7 @@ console.log( ft, "Pés equivalem a ", me,"metros")
 //Resp:50 Pés equivalem a  15.240185320653499 metros
 */
 
-//e)
+//e)Procure uma forma de converter galão (gal) para litro (l) e escreva um programa que converta 103.56gal para litro. Imprima  a resposta no console da seguinte forma: 
 /*
 let gal = prompt("Insira a quantidade de Galão:")
 let lit = gal/(3.785411784)
@@ -207,7 +207,7 @@ console.log( gal, "Galões equivalem a ", lit,"litros")
 */
 //resp: 103.56 Galões equivalem a  27.357657742209852 litros
 
-//f)
+//f)Procure uma forma de converter xícara (xic) para litro (l) e escreva um programa que converta 450xic para litro. Imprima  a resposta no console da seguinte forma:
 /*
 let xic = prompt("Insira a quantidade de Xícaras:")
 let lit = xic*(0.24)
@@ -216,7 +216,4 @@ console.log( xic, "Xícaras equivalem a ", lit,"litros")
 
 //resp: 450 Xícaras equivalem a  108 litros
 */
-//g)
-/*
-Escolha ao menos um dos itens anteriores e modifique o programa para que ele peça ao usuário o valor da unidade original antes de converter
-*/
+//g) Escolha ao menos um dos itens anteriores e modifique o programa para que ele peça ao usuário o valor da unidade original antes de converter
