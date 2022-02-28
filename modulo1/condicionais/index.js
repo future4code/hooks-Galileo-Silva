@@ -176,3 +176,43 @@
     // const quantidadeDeIngressos = prompt("Informe a quantidade de ingressos")
     // const valorIngressoDo = 
 
+
+
+    // let precoUnitario;
+
+    // switch (etapa) {
+    //     case "SF":
+    //         switch (categoria){
+    //             case1:
+    //             precoUnitario = 1320
+    //         }
+            
+    //         break;
+    //     case  
+    
+    //     default:
+    //         break;
+    // }
+
+    const compra = {
+        nome: prompt("Informe seu nome"),
+        tipoDeJogo: prompt("Informe o tipo de jogo(IN - internacional ou DO - doméstico)"),
+        etapaDoJogo: prompt("Informe a etapa do jogo(SF, DT, ou FI"),
+        categoria: prompt("Informe a categoria(1, 2, 3, ou 4)"),
+        quantidadeDeIngressos: prompt("Informe a quantidade de ingressos")
+        
+    }
+
+    console.log(compra)
+
+    // function processarCompra(objeto){
+        
+
+
+
+    // }
+
+    // processoCompra();
+
+    
+
