@@ -56,17 +56,17 @@
     
     // b) Se a quantidade for maior que 0, solicite que o usuário digite os nomes deles, um por um, e guarde esses nomes em um array
 
-    let entradaBichos = prompt("Quantos bichinhos de estimação você tem?")
-     let quantidadeDeBichos = entradaBichos
+    // let entradaBichos = prompt("Quantos bichinhos de estimação você tem?")
+    //  let quantidadeDeBichos = entradaBichos
   
-    if (entradaBichos == 0 ) {
-        console.log("Que pena! Você pode adotar um pet!")
-    } else {
-        while (quantidadeDeBichos < entradaBichos) {
-            console.log("Insira o próximo")
-            quantidadeDeBichos + entradaBichos
-            console.log(quantidadeDeBichos)
+    // if (entradaBichos == 0 ) {
+    //     console.log("Que pena! Você pode adotar um pet!")
+    // } else {
+    //     while (quantidadeDeBichos < entradaBichos) {
+    //         console.log("Insira o próximo")
+    //         quantidadeDeBichos + entradaBichos
+    //         console.log(quantidadeDeBichos)
 
-        }
+    //     }
         
-    }
+    // }
