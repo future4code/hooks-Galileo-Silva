@@ -37,56 +37,62 @@
 //a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas informações sobre você, como:
 
 // function imprimirFrase() {
-//     console.log("Eu sou Galileo, tenho 38 anos, moro em Recife e sou estudante")
+//     const nome = "Galileo"
+//     const idade = 38
+//     const cidade = "Recife"
+//     const profissao = "estudante"
+
+      
+    
+//     console.log(`Eu sou o ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}`)
 // }
 // imprimirFrase()
 
 //b) Agora escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (string), a idade (number), a cidade (string) e uma profissão (string). Ela deve retornar uma string que unifique todas as informações da pessoa em uma só mensagem com o template:
 
-// function informacoesPessoais(nome, idade, cidade, profissao) {
-//     console.log(`Eu sou ${ nome }, tenho ${ idade }, anos moro em ${cidade}, e sou ${profissao}`)
+// function imprimirFrase(nome, idade, cidade, profissao) {
+      
+//         console.log(`Eu sou o ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}`)
 // }
-
-// informacoesPessoais("galileo", 38, "Recife", "Estudante")
+// imprimirFrase("Galileo", 38, "Recife", "estudante")
 
 //2).
 //a).  Escreva uma função que receba 2 números como parâmetros, e, dentro da função, faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
 
-// const num1 = 3
-// const num2 = 5
+// function somaDeNumeros(num1 = 2, num2 = 3) {
+   
+//     const soma = num1 + num2
 
-// function minhaFuncao(variavel) {
-//     variavel = num1 + num2
-
-//     return variavel
+//     return soma
+    
 // }
 
-// console.log(minhaFuncao())
+// console.log(somaDeNumeros())
 
 //b). Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número é maior ou igual ao segundo.
 
-// const num1 = 5
-// const num2 = 5
+// function somaDeNumeros(num1, num2) {
+   
+//     const camparacao = num1 >= num2
 
-// function minhaFuncao(variavel) {
-//     variavel = num1 >= num2
-
-//     return variavel
+//     return camparacao
+    
 // }
 
-// console.log(minhaFuncao())
+// console.log(somaDeNumeros(2, 3))
 
 //c). Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
 
-// const num1 = 6
+// function somaDeNumeros(num1) {
+   
+//     const soma = num1 %2 === 0
+    
 
-// function minhaFuncao(variavel) {
-//     variavel = num1 % 2 === 0
-
-//     return variavel
+//     return soma
+    
 // }
 
-// console.log(minhaFuncao())
+// console.log(somaDeNumeros(2))
 
 //d). Faça uma função que recebe uma mensagem (string) como parâmetro e imprima o tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.
 
@@ -142,11 +148,18 @@
 // Desafios
 // 1).a
 
-// const arrowFunction = (novaFunction) => console.log(`Olá ${nome}`)
+const arrowFunction = (arrowFunction2) => {
+  
+  return arrowFunction2
+}
+console.log(arrowFunction())
 
 // b).
 
-// const imprimirNomeArrowReturn = (nome) => `Olá ${nome}`
+const arrowFunction2 = (num2, num3) => {
+        
+    const soma = num2 + num3
+    return soma
 
-// //novaFunction("Luiz")
-// console.log(imprimirNomeArrowReturn("Filipe"))
+}
+console.log(arrowFunction2(2, 3))
