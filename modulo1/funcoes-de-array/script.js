@@ -69,22 +69,30 @@
 
 //2. Dado o seguinte array de produtos, realize as operações pedidas nos itens abaixo utilizando as funções de array map e filter:
 
-// { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
-//    { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
-//    { nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6 },
-//    { nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7 },
-//    { nome: "Leite", categoria: "Bebidas", preco: 2.99 },
-//    { nome: "Cândida", categoria: "Limpeza", preco: 3.30 },
-//    { nome: "Detergente Ypê", categoria: "Limpeza", preco: 2.2 },
-//    { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
-//    { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
-//    { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
-// ]
+const produtos = [   { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
+   { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
+   { nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6 },
+   { nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7 },
+   { nome: "Leite", categoria: "Bebidas", preco: 2.99 },
+   { nome: "Cândida", categoria: "Limpeza", preco: 3.30 },
+   { nome: "Detergente Ypê", categoria: "Limpeza", preco: 2.2 },
+   { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
+   { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
+   { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
+]
 
 // a) Crie um novo array que contenha apenas o nome de cada item
-
+let apenasNomeDoItem = produtos.map((item, indice, array) => {
+    return item.nome
+})
+console.log(apenasNomeDoItem)
 // b) Crie um novo array que contenha um objeto com o nome e o preço de cada item, aplicando 5% de desconto em todos eles
+let desconto = produtos.map((intem, indice, array) =>{
+    const novoPreco = (item.preco * 0.95).toFixed(2)
+    return{nome: item.nome, preço: novoPreco}
+})
 
+// console.log(desconto)
 // c) Crie um novo array que contenha apenas os objetos da categoria Bebidas
 
 // d) Crie um novo array que contenha apenas os objetos cujo nome contenha a palavra "Ypê"
