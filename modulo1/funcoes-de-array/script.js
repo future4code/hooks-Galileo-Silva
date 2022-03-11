@@ -61,9 +61,19 @@
 //     { nome: "Caramelo", raca: "Vira-lata"},
 //  ]
 
-// a) Crie um novo array que contenha apenas o nome dos doguinhos
-
-// b) Crie um novo array apenas com os [cachorros salsicha](https://www.youtube.com/watch?v=YQ404vwjzus)
+// // a) Crie um novo array que contenha apenas o nome dos doguinhos
+// const nomeDoquinhos = pets.map((pet, indice, array) => {
+//     return pet.nome
+// })
+// console.log(nomeDoquinhos)
+// // b) Crie um novo array apenas com os [cachorros salsicha](https://www.youtube.com/watch?v=YQ404vwjzus)
+// const racaSalsicha = pets.filter((nome, indice, array) => {
+//     if (nome.raca === "Salsicha") {
+//         return nome.raca
+//     }
+    
+// })
+// console.log(racaSalsicha)
 
 // c) Crie um novo array que possuirá mensagens para enviar para todos os clientes que são poodles. A mensagem deve ser: "Você ganhou um cupom de desconto de 10% para tosar o/a `[NOME]`!"
 
@@ -80,24 +90,60 @@ const produtos = [   { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.
    { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
    { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
 ]
-
+//console.log(produtos)
 // a) Crie um novo array que contenha apenas o nome de cada item
-let apenasNomeDoItem = produtos.map((item, indice, array) => {
-    return item.nome
-})
-console.log(apenasNomeDoItem)
+//?
+//})
+//console.log(apenasNomeDoItem)
 // b) Crie um novo array que contenha um objeto com o nome e o preço de cada item, aplicando 5% de desconto em todos eles
-let desconto = produtos.map((intem, indice, array) =>{
-    const novoPreco = (item.preco * 0.95).toFixed(2)
-    return{nome: item.nome, preço: novoPreco}
-})
+// let desconto = produtos.map((item, indice, array) =>{
+//     const novoPreco = (item.preco * 0.95).toFixed(2)
+//     return{nome: item.nome, preço: novoPreco}
+// })
+//console.log(desconto)
 
-// console.log(desconto)
 // c) Crie um novo array que contenha apenas os objetos da categoria Bebidas
-
+// const bebidas = produtos.filter((nome, indice, array) => {
+//     if (nome.categoria === "Bebidas") {
+//         return nome.categoria
+//     }
+// })
+//console.log(bebidas)
 // d) Crie um novo array que contenha apenas os objetos cujo nome contenha a palavra "Ypê"
 
+
+// const produtosYpe = produtos.filter((nome, indice, array) => {
+//     let teste = nome.nome
+    
+//     if (teste.includes("Ypê")) {
+//         return teste
+
+//     }
+// })
+// console.log(produtosYpe)
 //e) Crie um novo array onde cada item é uma frase "Compre [NOME] por [PREÇO]". Esse array deve conter frases apenas dos itens cujo nome contenha a palavra "Ypê"
+
+const produtosYpe = produtos.filter((nome, indice, array) => {
+    let teste = nome.nome
+    
+    if (teste.includes("Ypê")) {
+        return teste
+
+    }
+})
+console.log(produtosYpe)
+
+     const separaNome = produtosYpe.map((nome, indice, array) => {
+     return nome.nome
+})
+console.log(separaNome)
+
+const separaPreco = produtosYpe.map((nome, indice, array) => {
+    return nome.preco
+})
+console.log(separaPreco)
+
+
 
 /////////////////////////////////////////////
 
