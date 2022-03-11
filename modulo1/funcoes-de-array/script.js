@@ -123,25 +123,25 @@ const produtos = [   { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.
 // console.log(produtosYpe)
 //e) Crie um novo array onde cada item é uma frase "Compre [NOME] por [PREÇO]". Esse array deve conter frases apenas dos itens cujo nome contenha a palavra "Ypê"
 
-const produtosYpe = produtos.filter((nome, indice, array) => {
-    let teste = nome.nome
+// const produtosYpe = produtos.filter((nome, indice, array) => {
+//     let teste = nome.nome
     
-    if (teste.includes("Ypê")) {
-        return teste
+//     if (teste.includes("Ypê")) {
+//         return teste
 
-    }
-})
-console.log(produtosYpe)
+//     }
+// })
+// console.log(produtosYpe)
 
-     const separaNome = produtosYpe.map((nome, indice, array) => {
-     return nome.nome
-})
-console.log(separaNome)
+//      const separaNome = produtosYpe.map((nome, indice, array) => {
+//      return nome.nome 
+// })
+// console.log(separaNome)
 
-const separaPreco = produtosYpe.map((nome, indice, array) => {
-    return nome.preco
-})
-console.log(separaPreco)
+// const separaPreco = produtosYpe.map((nome, indice, array) => {
+//     return nome.preco
+// })
+// console.log(separaPreco)
 
 
 
@@ -151,15 +151,22 @@ console.log(separaPreco)
 
 //1. Dado o seguinte array de pokémons, realize as operações pedidas nos itens abaixo:
 
-// const pokemons = [
-//     { nome: "Bulbasaur", tipo: "grama" },
-//     { nome: "Bellsprout", tipo: "grama" },
-//     { nome: "Charmander", tipo: "fogo" },
-//     { nome: "Vulpix", tipo: "fogo" },
-//     { nome: "Squirtle", tipo: "água" },
-//     { nome: "Psyduck", tipo: "água" },
-//  ]
+const pokemons = [
+    { nome: "Bulbasaur", tipo: "grama" },
+    { nome: "Bellsprout", tipo: "grama" },
+    { nome: "Charmander", tipo: "fogo" },
+    { nome: "Vulpix", tipo: "fogo" },
+    { nome: "Squirtle", tipo: "água" },
+    { nome: "Psyduck", tipo: "água" },
+ ]
 
 //a) Crie um novo array que contenha apenas o nome dos pokémons em ordem alfabética
-
+const pokeOrdemAlfabetica = pokemons.map((nome, indice, array) => {
+    return nome.nome
+})
+console.log(pokeOrdemAlfabetica.sort())
 //b) Crie um novo array apenas com os tipos dos pokémons, sem repetição
+const pokTipos = pokemons.map((nome, indice, array) => {
+    return nome.tipo
+})
+console.log(pokTipos)
