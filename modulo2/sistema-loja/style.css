@@ -1,0 +1,57 @@
+header {
+    background-color: rgb(57, 69, 94);
+    position: static;
+    padding: 1rem;
+    margin: auto;
+    color: rgba(250, 250, 250, 0.74);
+    opacity: 90%;
+    width: 100%;
+}
+
+body, html {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding:0;
+    background-color: rgb(243, 239, 239);
+
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(57, 69, 94);
+    width: 100%;
+    height: 100px;    
+    text-align: left;
+    line-height: 108px;
+    opacity: 70%;
+    
+}
+
+a {
+    padding: 1% 6%;
+    color: black;
+}
+
+#redesocial {
+    display: inline-block;
+    padding-left: 1%;
+    width: 1%;
+    text-align: right;
+}
+
+#centropagina {
+    background-image: -webkit-gradient(50);
+}
+
+#backgroundcentro{
+    height: 30%;
+    width: 100%;
+    opacity: 40%;
+}
+#banner {
+    width: 100%;
+    display: inline-block;
+    
+}
