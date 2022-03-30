@@ -7,13 +7,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: roboto;
+    font-family: 'Roboto', 'sans-serif';
+    
 }
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 
-@font-face {
-    font-family: roboto;
-    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap);
-}
 
 h2 {
     background-color: #fe7e02;
@@ -29,6 +27,7 @@ input {
 
 button:active {
     color: white;
+        
 }
 
 button:hover {
@@ -106,7 +105,7 @@ div>p:first-child {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
-    font-family: ;
+    
 }
 
 
@@ -146,6 +145,15 @@ td button {
 
 #searchIcon {
     width: 50px;
+    
+}
+
+#searchIcon:hover {
+    opacity: 0.5;
+}
+
+#searchIcon::marker {
+    opacity: 1;
 }
 
 
