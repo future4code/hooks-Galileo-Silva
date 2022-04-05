@@ -1,0 +1,106 @@
+* {
+   /* margin: 0; 
+    padding: 0;*/
+}
+
+header {
+    width:100%;
+	height:100px;
+	margin:auto;
+	background-color: rgb(57, 69, 94);
+	font-family: 'Krub', sans-serif;
+	color:white;
+}
+
+header h3 {
+    margin: 0 0 0 0.5%;
+}
+
+body, html {
+    width: 100%;
+    height: 75%;
+    margin: 0;
+    padding:0;
+    background-color:;
+    color: black;
+
+  }
+
+.centropagina{
+    width: 100vw;
+    height: 96%;
+}
+  footer {
+    position: static;
+    bottom: 0;
+    background-color: rgb(57, 69, 94);
+    width: 100%;
+    text-align: left;
+    opacity: 70%;
+    height: 39.3%;
+}
+
+#redesocial {
+    display: inline-block;
+    padding-left: 1%;
+    width: 1%;
+    text-align: right;
+    padding: 0% 2%;
+    color: black;
+    /* margin-top: 3% ; */
+}
+
+footer p{
+    margin: 0% 0 0 2% ;
+    color: white;
+}
+
+.imgRede {
+    margin-top: 150%;
+}
+
+
+#backgroundcentro{
+    background-image: -webkit-gradient(50);
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    opacity: 40%;
+    
+
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#banner {
+    width: 100%;
+    display: inline-block;
+
+    
+}
+
+#banner h1{
+    padding: 0;
+    margin: 0 0 0 0.5%;
+}
+
+#botao{
+    /* background-color: #d60000; */
+    color: yellow;
+    position: absolute;
+    padding: .4% 0 0 0;
+    margin: 0;
+    right: 1.5%;
+    
+    
+}
+
+#botao a{
+
+}
+
+.navbar {
+    background-color: #363636;
+    width: 100vw;
+    height: 10%;
+}
