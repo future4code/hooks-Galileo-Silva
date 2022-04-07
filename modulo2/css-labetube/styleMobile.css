@@ -1,0 +1,53 @@
+@media screen and (min-device-width : 320px) and (max-device-width:480px) {
+
+header {
+    display: grid;
+    justify-content: space-between;
+}
+
+.botao {
+    padding: 1vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    display: flex;
+    box-shadow: 2px 2px 5px darkgrey;
+    margin: 2vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 62vh;
+}
+
+.video {
+    width: 60vh;
+    text-align: center;
+    margin: 2vh;
+    
+}
+
+.modal {
+    top: 20vh;
+    right: 5vh;
+    bottom: 10vh;
+    left: 5vh;
+}
+
+.pmodal {
+    height: 10vh;
+    margin-bottom: 3vh;
+    margin-top: 5vh;
+}
+
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width:768px)
