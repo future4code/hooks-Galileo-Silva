@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+//import styled from 'styled-components'
 import CardGrande from './components/CardGrande/CardGrande';
 import CardPequeno from './components/CardGrande/CardPequeno';
 import ImagemButton from './components/ImagemButton/ImagemButton';
