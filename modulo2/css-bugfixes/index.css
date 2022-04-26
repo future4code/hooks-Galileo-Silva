@@ -3,14 +3,14 @@
   *  ESTILOS GERAIS 
   *
   **/
-
+  @import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Roboto', sans-serif;
     
 }
-@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
 
 
 h2 {
@@ -91,7 +91,7 @@ div>p:first-child {
 
 #container-de-descricao>ol {
     padding: 15px 0px;
-    
+    list-style-position: inside;
     
 }
 
@@ -141,6 +141,7 @@ td button {
     border-top-width: 0;
     border-left-width: 0;
     border-right-width: 0;
+    outline: 0;
 }
 
 #searchIcon {
@@ -195,6 +196,3 @@ td button {
     margin: 0 28%;
 }
 
-.olNum {
-    list-style-type: decimal;
-}
