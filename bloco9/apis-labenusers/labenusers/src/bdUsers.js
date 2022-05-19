@@ -12,7 +12,6 @@ const headers = {
 class App extends React.Component {
   state = {
     usuario: [],
-    email:[],
     usuarioInput: "",
     emailInput: ""
   };
@@ -25,13 +24,13 @@ class App extends React.Component {
     axios
       .get(urlLabeusers, headers)
       .then((res) => {
-        this.setState({ usuario: res.data.result.list });
+        this.setState({ usuario: res.data });
       })
       .catch((err) => {
         alert("Algo deu errado, tente novamente");
       });
   };
-
+  
   createUsers = () => {
     const body = {
       name: this.state.usuarioInput,
@@ -47,15 +46,17 @@ class App extends React.Component {
       })
       .catch((err) => {
         alert(err.response.data.message);
-        this.setState({ usuario: "" });
+        this.setState({ usuarioInput: "" });
       });
   };
 
-  onUsuarioTextChange = (event) => {
+  
+
+  onCreateUsersTextChange = (event) => {
     this.setState({ usuarioInput: event.target.value });
   };
 
-  onEmailTextChange = (event) => {
+  onCreateEmailTextChange = (event) => {
     this.setState({ emailInput: event.target.value });
   };
 
@@ -66,21 +67,21 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>Labenusers</h1>
+        <h1>BD Users</h1>
         <input
-          defaultValue={this.state.usuario}
-          onChange={this.onUsuarioTextChange}
+          defaultValue={this.state.usuarioInput}
+          onChange={this.onCreateUsersTextChange}
           placeholder="Usuário"
         />
         <input
-          defaultValue={this.state.email}
-          onChange={this.onEmailTextChange}
+          defaultValue={this.state.emailInput}
+          onChange={this.onCreateEmailTextChange}
           placeholder="Email"
           />
           
         <button onClick={this.createUsers}>Adicionar Users</button>
         {usuarioComponents}
-        <a href="App.js">Voltar</a>
+        
 
       </div>
     );
