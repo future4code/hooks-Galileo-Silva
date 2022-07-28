@@ -1,5 +1,10 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import CardComponent from './componentes/CardComponent';
+import MenuComponent from './componentes/MenuComponent';
+import FooterComponents from './componentes/FooterComponent';
+
 
 function App() {
   const titulo = "Título do vídeo"
@@ -18,56 +23,32 @@ function App() {
 
         <main>
             <nav class="menu-vertical">
-                <ul>
-                    <li className="botoes-meunu-vertical">Início</li>
-                    <li className="botoes-meunu-vertical">Em alta</li>
-                    <li className="botoes-meunu-vertical">Inscrições</li>
+                
+                    <MenuComponent nome={"Menu"} link={"#"}/>
+                    <MenuComponent nome={"Em Alta"} link={"#"}/>
+                    <MenuComponent nome={"Inscrições"} link={"#"}/>
                     <hr/>
                     <hr/>
-                    <li class="botoes-meunu-vertical">Originais</li>
-                    <li class="botoes-meunu-vertical">Histórico</li>
-                </ul>
+                    <MenuComponent nome={"Originais"} link={"#"}/>
+                    <MenuComponent nome={"Histórico"} link={"#"}/>
+                
             </nav>
 
             <section className="painel-de-videos">
-                <div className="box-pagina-principal media1" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=1 " alt="img"/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media2" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=2 " alt="img"/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media3" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=3 " alt="img"/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media4" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=4 " alt="img"/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media5" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=5 " alt="img"/>
-                    <h4>Título do vídeo</h4>
-                </div>
-                <div className="box-pagina-principal media6" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=6 " alt="img"/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media7" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=7 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media8" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=8 " alt="img"/>
-                    <h4>{titulo}</h4>
-                </div>
+                <CardComponent  video={"https://picsum.photos/400/400?a=1"} titulo={"Título do video 1"} class={"box-pagina-principal media1"}/>
+                <CardComponent  video={"https://picsum.photos/400/400?a=2"} titulo={"Título do video 2"} class={"box-pagina-principal media2"}/>
+                <CardComponent  video={"https://picsum.photos/400/400?a=3"} titulo={"Título do video 3"} class={"box-pagina-principal media3"}/>
+                <CardComponent  video={"https://picsum.photos/400/400?a=4"} titulo={"Título do video 4"} class={"box-pagina-principal media4"}/>
+                <CardComponent  video={"https://picsum.photos/400/400?a=5"} titulo={"Título do video 5"} class={"box-pagina-principal media5"}/>
+                <CardComponent  video={"https://picsum.photos/400/400?a=6"} titulo={"Título do video 6"} class={"box-pagina-principal media6"}/>
+                <CardComponent  video={"https://picsum.photos/400/400?a=7"} titulo={"Título do video 7"} class={"box-pagina-principal media7"}/>
+                <CardComponent  video={"https://picsum.photos/400/400?a=8"} titulo={"Título do video 8"} class={"box-pagina-principal media8"}/>
+
+                
             </section>
         </main>
 
-        <footer>
-            <h4>Oi! Eu moro no footer!</h4>
-        </footer>
+        <FooterComponents/>
     </div>
     </div>
   );
