@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import CardComponent from './componentes/CardComponent';
-import MenuComponent from './componentes/MenuComponent';
-import FooterComponents from './componentes/FooterComponent';
+import {MenuComponent} from './componentes/MenuComponent';
+import {FooterComponents} from './componentes/FooterComponent';
 
 
 function App() {

@@ -1,11 +1,11 @@
 import React from "react";
 
-function FooterComponents () {
+export class FooterComponents extends React.Component {
+    render() {
     return(
         <footer>
             <h4>Oi! Eu moro no footer!</h4>
         </footer>
     );
+ }
 }
-
-export default FooterComponents
