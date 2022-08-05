@@ -99,10 +99,11 @@ main {
 footer {
   height: 10%;
   background-color: grey;
-  margin: 0;
+  margin-bottom: -100px;
   padding: 0;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .box-pagina-principal > img {
