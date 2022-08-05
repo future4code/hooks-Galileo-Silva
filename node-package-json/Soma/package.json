@@ -1,0 +1,13 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "soma" : "node soma.js"
+    
+  },
+  "author": "Galileo Guilherme",
+  "license": "ISC"
+}
