@@ -1,0 +1,5 @@
+CREATE TABLE Funcionarios (
+Id VARCHAR(50) PRIMARY KEY,
+Nome VARCHAR(30),
+Email VARCHAR(40)
+);
