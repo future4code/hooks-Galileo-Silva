@@ -1,0 +1,8 @@
+CREATE TABLE projetos (
+id INT PRIMARY KEY,
+name VARCHAR(40) NOT NULL,
+title VARCHAR(40) NOT NULL,
+date DATE NOT NULL
+);
+
+
